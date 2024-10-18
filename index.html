@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inès Boukaouma</title>
+    <link rel="icon" href="fleur.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -39,7 +40,7 @@
       <nav class="bg-sapin p-5 text-presque-blanc font-roboto text-[24px]">
         <div class="container mx-auto px-4">
           <div class="flex justify-between items-center">
-            <img src="/logo-blanc.svg" alt="logo" class="h-12" />
+            <img src="logo-blanc.svg" alt="logo" class="h-12 md:h-16 lg:h-20" />
             <!-- Hamburger menu (visible jusqu'à lg) -->
             <button id="menu-toggle" class="lg:hidden">
               <svg
@@ -66,109 +67,183 @@
       </nav>
     </header>
     <main>
-      <!-- section 1 : image et nom de l'auteur -->
-      <div><img src="" alt="Nom d'auteur: Inès Boukaouma" />Inès Boukaouma</div>
+      <!-- section 1 : image et titre -->
+      <div class="relative">
+        <img src="yeuxverts.png" alt="titre:" class="w-full h-auto" />
+        <div class="absolute inset-x-0 top-0 mt-4 flex items-center justify-center">
+          <h1 class="text-[1.5rem] md:text-[4rem] lg:text-[8rem] font-bold text-presque-blanc font-ruwudu">
+            Bienvenue à Valoria
+          </h1>
+        </div>
+      </div>
       <!-- section 2 : carousel de livres -->
-      <div>
-        <img src="" alt="livre 1" /> <img src="" alt="livre 2" /><img src="" alt="livre 3" />
-        <button>Voir plus</button>
+      <div class="flex flex-col bg-sapin py-14 lg:py-24 px-8">
+        <div class="flex flex-col lg:flex-row gap-12">
+          <img src="livre1.png" alt="livre 1" class="mx-auto rounded-md" />
+          <img src="livre2.png" alt="livre 2" class="mx-auto rounded-md" />
+          <img src="livre3.png" alt="livre 3" class="mx-auto rounded-md" />
+        </div>
+        <button
+          class="bg-emeraude text-presque-blanc lg:text-[24px] text-[20px] py-2 px-6 rounded-full mt-14 mx-auto block hover:bg-opacity-70"
+        >
+          Voir plus
+        </button>
       </div>
       <!-- section 3 : Présentation de l'univers -->
-      <div>
-        <img src="/" alt="décoration" />
-        <div>
-          <div>Partez à la découverte de Valoria</div>
-          <div>Texte de présentation</div>
+      <div class="flex flex-col md:flex-row mx-auto p-8">
+        <img src="lavande.png" alt="décoration" class="lg:w-1/3 md:w-1/2 lg:ml-[5%]" />
+        <div class="lg:p-12 flex flex-col md:w-[50%] my-auto lg:text-[20px]">
+          <div class="font-ruwudu text-[32px] lg:text-[48px] text-center font-roboto text-lavande mb-4">
+            Partez à la découverte de Valoria
+          </div>
+          <div>
+            <div class="mb-4">
+              Aux confins d'un monde où le mystère et le pouvoir s'entremêlent, le royaume de Valoria se dresse, fier et
+              énigmatique. Ses terres, imprégnées de légendes anciennes, murmurent des secrets à ceux qui savent
+              écouter.
+            </div>
+            <div class="mb-4">
+              Alors que les ombres s'allongent sur le trône, une force oubliée s'éveille. Au cœur de ce royaume en
+              mutation, chaque choix peut changer le cours de l'histoire.
+            </div>
+            <div class="mb-4">
+              Valoria vous appelle. Oserez-vous percer ses mystères et découvrir la vérité qui se cache derrière le
+              voile de la magie ?
+            </div>
+          </div>
         </div>
       </div>
       <!-- section 4 : présentation de l'auteur -->
-      <div>
-        <div>Citation</div>
-        <div>Texte de présentation</div>
-        <div><img src="" alt="Photo de l'auteur" /></div>
+      <div class="bg-sapin flex flex-col p-12 text-presque-blanc lg:text-[20px]">
+        <div class="md:text-[32px] text-[28px] mb-4 font-ruwudu font-bold">
+          « L'écriture est un miroir magique : elle reflète nos rêves et transforme l'imaginaire en réalité. »
+        </div>
+        <div class="flex flex-col md:flex-row justify-center align-center items-center">
+          <div class="lg:w-[1/2]">
+            <div class="mb-4 lg:mb-12">
+              Passionnée de fantasy depuis mon plus jeune âge, j'ai toujours été fascinée par le pouvoir des mots pour
+              créer des mondes. Avec la saga des Illuminés, je vous invite à plonger dans un univers où la magie côtoie
+              le mystère, où chaque page tourne la clé d'un nouveau secret.
+            </div>
+            <div class="mb-4 lg:mb-12">
+              Quand je ne suis pas en train d'explorer les recoins de Valoria, vous me trouverez probablement scotchée à
+              ma gourde d'eau, perdue dans les pages d'un bon livre ou en train d'imaginer de nouvelles aventures pour
+              mes personnages.
+            </div>
+            <div class="mb-14">
+              Rejoignez-moi dans cette quête littéraire, où l'imagination n'a pour limite que celle que nous lui
+              donnons.
+            </div>
+          </div>
+
+          <div><img src="ines.jpg" alt="Photo de l'auteur" class="lg:w-1/2 mx-auto rounded-md" /></div>
+        </div>
       </div>
       <!-- section 5 : formulaire de contact et réseaux sociaux -->
-      <div class="flex flex-wrap justify-end items-start mx-4 md:mx-8 lg:mx-16">
+      <div class="flex flex-col items-center lg:flex-row items-start mx-4 md:mx-8 lg:mx-16 lg:py-12">
         <!-- Image de décoration -->
-        <div class="w-full md:w-6/12 md:mb-0">
-            <img src="materiel-herboriste.png" alt="décoration" class="w-full h-auto">
+        <div class="md:w-3/4 md:mb-0">
+          <img src="materiel-herboriste.png" alt="décoration" class="" />
         </div>
-        
+
         <!-- Formulaire -->
-        <div class="w-full md:w-6/12 bg-sapin p-10 rounded mb-20">
+        <div class="w-full md:w-3/4 bg-sapin p-10 rounded mb-8">
           <form class="flex flex-col space-y-4" id="contact">
             <div>
-                <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="first-name">
-                    Prénom
-                </label>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="first-name" type="text" placeholder="Jeanne">
+              <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="first-name"> Prénom </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                id="first-name"
+                type="text"
+                placeholder="Jeanne"
+              />
             </div>
             <div>
-                <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="last-name">
-                    Nom
-                </label>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="last-name" type="text" placeholder="Dupont">
+              <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="last-name"> Nom </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                id="last-name"
+                type="text"
+                placeholder="Dupont"
+              />
             </div>
             <div>
-                <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="phone-number">
-                    Numéro de téléphone
-                </label>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="phone-number" type="tel" placeholder="+33(0)6 00 00 00 00">
+              <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="phone-number">
+                Numéro de téléphone
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                id="phone-number"
+                type="tel"
+                placeholder="+33(0)6 00 00 00 00"
+              />
             </div>
             <div>
-                <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="email">
-                    E-mail
-                </label>
-                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="email" type="email" placeholder="exemple@mail.com">
+              <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="email"> E-mail </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                id="email"
+                type="email"
+                placeholder="exemple@mail.com"
+              />
             </div>
             <div>
-                <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="message">
-                    Message
-                </label>
-                <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="message" rows="4" placeholder="Votre message..."></textarea>
+              <label class="block tracking-wide text-presque-blanc mb-2 font-ruwudu" for="message"> Message </label>
+              <textarea
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                id="message"
+                rows="4"
+                placeholder="Votre message..."
+              ></textarea>
             </div>
             <div class="flex justify-center">
-              <button type="submit" class="w-full md:w-6/12 bg-emeraude text-presque-noir font-roboto py-2 px-5 rounded hover:bg-lilas focus:outline-none focus:bg-lilas">
+              <button
+                type="submit"
+                class="w-full md:w-6/12 bg-emeraude text-presque-noir font-roboto py-2 px-5 rounded hover:bg-lilas focus:outline-none focus:bg-lilas"
+              >
                 Envoyer
-                </button>
+              </button>
             </div>
           </form>
         </div>
-    </div>
-    
+      </div>
     </main>
-    <footer class="bg-sapin text-white py-6">
+    <footer class="bg-sapin text-white py-4">
       <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 space-y-6 md:space-y-0">
         <!-- Logo à gauche -->
         <div class="w-full md:w-1/3 flex justify-center md:justify-start">
-            <img src="logo-blanc2.png" alt="Logo" class="h-20 w-auto"> <!-- Remplace "logo.png" par l'URL de ton logo -->
+          <img src="logo-blanc2.png" alt="Logo" class="h-20 w-auto" />
+          <!-- Remplace "logo.png" par l'URL de ton logo -->
         </div>
 
         <!-- Liste des réseaux sociaux au centre -->
         <div class="w-full md:w-1/3 flex flex-col items-center">
           <h5 class="mb-2 font-ruwudu text-lg">Mes réseaux sociaux</h5>
-          <div class="flex space-x-4"> <!-- Ajout de "flex" pour une disposition en ligne -->
-              <a href="#" class="hover:underline">
-                  <img src="ig.png" alt="instagram" class="w-6 h-6"> <!-- Ajuste la taille selon tes besoins -->
-              </a>
-              <a href="#" class="hover:underline">
-                  <img src="fb.png" alt="facebook" class="w-6 h-6"> <!-- Ajuste la taille selon tes besoins -->
-              </a>
+          <div class="flex space-x-4">
+            <!-- Ajout de "flex" pour une disposition en ligne -->
+            <a href="#" class="hover:underline">
+              <img src="ig.png" alt="instagram" class="w-6 h-6" />
+              <!-- Ajuste la taille selon tes besoins -->
+            </a>
+            <a href="#" class="hover:underline">
+              <img src="fb.png" alt="facebook" class="w-6 h-6" />
+              <!-- Ajuste la taille selon tes besoins -->
+            </a>
           </div>
         </div>
 
         <!-- Menu du site à droite -->
         <div class="w-full md:w-1/3 flex flex-col items-center md:items-end">
-            <ul class="space-y-2">
-                <li><a href="index.html" class="hover:underline">Accueil</a></li>
-                <li><a href="#" class="hover:underline">Livres</a></li>
-                <li><a href="#" class="hover:underline">À propos</a></li>
-                <li><a href="#" class="hover:underline">Blog</a></li>
-                <li><a href="index.html#contact" class="hover:underline">Contact</a></li>
-            </ul>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:underline">Accueil</a></li>
+            <li><a href="#" class="hover:underline">Livres</a></li>
+            <li><a href="#" class="hover:underline">À propos</a></li>
+            <li><a href="#" class="hover:underline">Blog</a></li>
+            <li><a href="index.html#contact" class="hover:underline">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </footer>  
+    </footer>
     <script>
       const menuToggle = document.getElementById('menu-toggle');
       const menu = document.getElementById('menu');
@@ -185,6 +260,7 @@
         menu.classList.toggle('flex-col');
         menu.classList.toggle('space-y-4');
         menu.classList.toggle('rounded-bl-xl');
+        menu.classList.toggle('z-10');
       });
     </script>
   </body>
